@@ -479,6 +479,17 @@ declare namespace botkit {
           set: SlackWebAPIMethod;
         };
     };
+    usergroups: {
+        create: SlackWebAPIMethod;
+        disable: SlackWebAPIMethod;
+        enable: SlackWebAPIMethod;
+        list: SlackWebAPIMethod;
+        update: SlackWebAPIMethod;
+        users: {
+            list: SlackWebAPIMethod;
+            update: SlackWebAPIMethod;
+        };
+    };
   }
   interface Storage<O> {
     save: (data: O, cb?: (err: Error, id: string) => void) => void;
